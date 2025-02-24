@@ -1,5 +1,6 @@
 package com.kanoyatech.runique
 
+import androidx.compose.material3.Text
 import com.kanoyatech.auth.presentation.intro.IntroScreenRoot
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavGraphBuilder
@@ -52,6 +53,10 @@ private fun NavGraphBuilder.authGraph(navController: NavHostController) {
                     navController.navigate("login")
                 }
             )
+        }
+
+        composable("login") {
+            Text(text = "Login")
         }
     }
 }
