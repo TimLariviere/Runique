@@ -19,9 +19,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.kanoyatech.core.presentation.designsystem.RuniqueBlack
+import com.kanoyatech.core.presentation.designsystem.RuniqueDarkGray
 import com.kanoyatech.core.presentation.designsystem.RuniqueGray
+import com.kanoyatech.core.presentation.designsystem.RuniqueTheme
 
 @Composable
 fun RuniqueActionButton(
@@ -62,7 +65,8 @@ fun RuniqueActionButton(
                 text = text,
                 modifier = Modifier
                     .alpha(if (isLoading) 0f else 1f),
-                fontWeight = FontWeight.Medium
+                fontWeight = FontWeight.Medium,
+                color = RuniqueDarkGray
             )
         }
     }
@@ -111,5 +115,18 @@ fun RuniqueOutlinedActionButton(
                 fontWeight = FontWeight.Medium
             )
         }
+    }
+}
+
+@Preview
+@Composable
+private fun RuniqueActionButtonPreview() {
+    RuniqueTheme {
+        RuniqueActionButton(
+            text = "Hello",
+            isLoading = false,
+            enabled = false,
+            onClick = {}
+        )
     }
 }
