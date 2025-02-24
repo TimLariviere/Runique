@@ -6,6 +6,8 @@ import org.gradle.kotlin.dsl.dependencies
 class JvmKtorConventionPlugin: Plugin<Project> {
     override fun apply(target: Project) {
         target.run {
+            pluginManager.apply("org.jetbrains.kotlin.plugin.serialization")
+            
             dependencies {
                 "implementation"(libs.findBundle("ktor").get())
             }
