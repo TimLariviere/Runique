@@ -7,6 +7,8 @@ import org.koin.android.ext.koin.androidApplication
 import org.koin.androidx.viewmodel.dsl.viewModelOf
 import org.koin.dsl.module
 import com.kanoyatech.runique.MainViewModel
+import com.kanoyatech.runique.RuniqueApp
+import kotlinx.coroutines.CoroutineScope
 
 val appModule = module {
     single<SharedPreferences> {
@@ -18,5 +20,9 @@ val appModule = module {
             EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
         )
     }
+    single<CoroutineScope> {
+        (androidApplication() as RuniqueApp).applicationScope
+    }
+
     viewModelOf(::MainViewModel)
 }
