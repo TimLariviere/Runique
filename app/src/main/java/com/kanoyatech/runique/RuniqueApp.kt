@@ -4,6 +4,7 @@ import android.app.Application
 import com.kanoyatech.auth.data.di.authDataModule
 import com.kanoyatech.auth.presentation.di.authViewModelModule
 import com.kanoyatech.core.data.di.coreDataModule
+import com.kanoyatech.core.database.di.databaseModule
 import com.kanoyatech.run.location.di.locationModule
 import com.kanoyatech.run.presentation.di.runViewModelModule
 import com.kanoyatech.runique.di.appModule
@@ -34,7 +35,8 @@ class RuniqueApp: Application() {
                 appModule,
                 coreDataModule,
                 runViewModelModule,
-                locationModule
+                locationModule,
+                databaseModule
             )
         }
     }

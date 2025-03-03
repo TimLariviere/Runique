@@ -1,6 +1,6 @@
 package com.kanoyatech.run.presentation.run_overview.mappers
 
-import com.kanoyatech.core.domain.Run
+import com.kanoyatech.core.domain.run.Run
 import com.kanoyatech.core.presentation.ui.formatted
 import com.kanoyatech.core.presentation.ui.toFormattedKm
 import com.kanoyatech.core.presentation.ui.toFormattedKmh

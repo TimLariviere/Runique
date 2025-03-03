@@ -1,4 +1,4 @@
-package com.kanoyatech.core.domain
+package com.kanoyatech.core.domain.run
 
 import com.kanoyatech.core.domain.location.Location
 import java.time.ZonedDateTime

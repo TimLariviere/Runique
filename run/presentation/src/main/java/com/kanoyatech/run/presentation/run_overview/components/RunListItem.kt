@@ -45,7 +45,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.SubcomposeAsyncImage
-import com.kanoyatech.core.domain.Run
+import com.kanoyatech.core.domain.run.Run
 import com.kanoyatech.core.domain.location.Location
 import com.kanoyatech.core.presentation.designsystem.CalendarIcon
 import com.kanoyatech.core.presentation.designsystem.RunOutlinedIcon
